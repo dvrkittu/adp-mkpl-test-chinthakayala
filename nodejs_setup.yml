@@ -1,5 +1,5 @@
 ---
-- hosts: slave
+- hosts: localhost
   roles:
    - role: nodejs_setup
 # executes only when OS == Suse
