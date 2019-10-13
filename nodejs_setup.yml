@@ -1,0 +1,6 @@
+---
+- hosts: slave
+  roles:
+   - role: nodejs_setup
+# executes only when OS == Suse
+     when: ansible_facts['os_family'] == "Suse"

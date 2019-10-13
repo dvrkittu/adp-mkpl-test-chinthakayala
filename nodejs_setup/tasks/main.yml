@@ -1,0 +1,8 @@
+---
+# tasks file for nodejs_setup
+# installing nodejs and npm in SUSE
+- name: Installing nodejs and npm
+  zypper: 
+    name: ['{{ nodejs_version }}','npm']
+    state: present
+    update_cache: yes
