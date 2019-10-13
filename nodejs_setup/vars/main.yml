@@ -1,5 +1,5 @@
 ---
 # vars file for nodejs_setup
 # nodejs version to be installed
-var_nodejs_version: "{{ nodejs_version }}"
+nodejs_version: "{{ nodejs_version }}"
 
