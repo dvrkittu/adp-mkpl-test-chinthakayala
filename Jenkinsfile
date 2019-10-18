@@ -8,6 +8,7 @@ pipeline {
           }
           stage('ansible-clone') {
               steps {
+                  sh "rm -rf adp-mkpl-test-chinthakayala"
                   echo "clone completed"
                   sh "ansible-playbook nodejs_setup.yml -e nodejs_version=nodejs10"
               }
@@ -15,7 +16,7 @@ pipeline {
           stage('nodejs-version') {
               steps {
                   
-                  sh "node-v"
+                  sh "node -v"
               }
           }
         }
